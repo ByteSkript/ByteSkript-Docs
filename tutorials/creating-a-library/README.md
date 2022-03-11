@@ -42,7 +42,7 @@ repositories {
 }
 
 dependencies {
-    byteskript 'org.byteskript:byteskript:1.0.22'
+    byteskript 'org.byteskript:byteskript:1.0.24'
 }
 ```
 
