@@ -27,7 +27,7 @@ ByteSkript's repository also houses all of its dependencies, in case these are n
 <dependency>
     <groupId>org.byteskript</groupId>
     <artifactId>byteskript</artifactId>
-    <version>1.0.22</version>
+    <version>1.0.24</version>
     <scope>provided</scope>
 </dependency>
 ```
