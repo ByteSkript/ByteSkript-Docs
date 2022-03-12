@@ -60,7 +60,7 @@ Running it for the first time will create special folders in the run directory.
 | Name         | Purpose                                                                                                                                                                                                            |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `skript/`    | <p>This is where you can write your script files, with the extension <code>.bsk</code>.<br>All <code>.bsk</code> files in this directory and its subfolders will be compiled/loaded.</p>                           |
-| `libraries/` | <p>This is where you can put <code>.jar</code> syntax libraries that other people create.<br>If you've created custom syntax, you can put the compiled <code>.class</code> files here as well.</p>                 |
+| `libraries/` | <p>This is where you can put third-party <code>.jar</code> syntax libraries that other people create.<br>If you've created custom syntax, you can put the compiled <code>.class</code> files here as well.</p>     |
 | `resources/` | <p>This is where you can put non-script files that you need in your output jar.<br>This is only used by the jar builder.</p>                                                                                       |
 | `compiled/`  | <p>If you are compiling your scripts to <code>.class</code> or <code>.jar</code> files, the output will go here.<br>This folder is never emptied, so make sure to delete any old versions before re-compiling.</p> |
 
