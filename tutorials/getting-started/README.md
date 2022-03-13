@@ -49,6 +49,12 @@ The `skript/` folder is the most important.
 | `resources` | This is for adding extra text/data files that you want to package inside your compiled scripts. If you are using **run** you do not need to use this folder. |
 | `compiled`  | If you are using **compile** or **jar** the compiled output will go here.                                                                                    |
 
+### Installing the CLI
+
+ByteSkript comes with a command-line interface that can be installed to your system, and will run the Jar file from anywhere through the `bsk` command.
+
+Installers can be downloaded from the GitHub. Not all systems support a command-line interface.&#x20;
+
 ### Writing Your First Script
 
 Any file with a name ending in `.bsk` in the `skript/` folder will be seen and loaded by ByteSkript.
