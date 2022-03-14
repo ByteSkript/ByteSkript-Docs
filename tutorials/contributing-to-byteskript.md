@@ -12,10 +12,10 @@ There are three main ways in which you can contribute to the project:
 
 1. **Improving documentation and user resources.**\
    You can help users by creating more examples, information and tutorials for our documentation.\
-   If you want to make significant contributions to the documentation you could join our organisation.\
-   You can also write test code (in Skript!) to help catch bugs before releases.&#x20;
+   If you want to make significant contributions to the documentation you may join our organisation.\
+   You can also write test code (in Skript) to help catch bugs before releases.
 2. **Contributing to the compiler/runtime source code.**\
-   ****You can create pull-requests on the [GitHub](https://github.com/Moderocky/ByteSkript) with contributions to our source code.\
+   \*\*\*\*You can create pull-requests on the [GitHub](https://github.com/Moderocky/ByteSkript) with contributions to our source code.\
    You could add or improve syntax, internal features or add extra tests written in Skript to help catch bugs before releases.\
    Make sure to check the [to-do list](https://github.com/Moderocky/ByteSkript/blob/master/TODO.md) for most-wanted features.
 3. **Creating DSL versions and language libraries.**\
@@ -45,4 +45,3 @@ The **compiler** handles converting the file and syntax `ElementTree` into VM [b
 The [Foundation](https://github.com/Moderocky/Foundation) library is available for simple instructions, but complex behaviour will require using [ASM](https://asm.ow2.io) directly, which is the same compiler framework used by the JDK internally.
 
 The **runtime** involves manipulating threads and passing resources to scripts. This involves fairly basic Java, although some of the class-loading and thread manipulation is more complex.
-

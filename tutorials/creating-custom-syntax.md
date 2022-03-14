@@ -36,4 +36,4 @@ We can then find the script's output in the `compiled/` folder. It will be named
 
 Once we move this file to the `libraries/` folder, our new syntax will be available to use as `my [cool] effect`.
 
-Every time this effect is used, the compiler will insert a `run` effect to your function.
+Every time this effect is used, the compiler will trigger your function directly.
