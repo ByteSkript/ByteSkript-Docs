@@ -27,6 +27,16 @@ function test:
 // section ends here, the tree is closed
 ```
 
+Sections can have different inline behaviour. Some will apply to the remainder of their current block, like the `if` conditional.
+
+Other inline section headers may apply only to their current line, such as the `monitor` and `loop ... in ...` effects.
+
+```clike
+set {var} to a new object
+monitor {var} // the monitor applies only to this line
+print "done" // this is not in the monitor section
+```
+
 ### Block Sections
 
 Most sections will be used in the **block** format, indented by one unit.

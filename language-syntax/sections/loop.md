@@ -125,7 +125,7 @@ loop {number} in (1, 2, 6, 4):
 print "All four lucky numbers were printed."
 ```
 
-The first argument **must** be an explicit variable, but it does not need to be a new variable. It is used to store the object during the loop.
+The first argument is used to store the object during the loop.
 
 ```clike
 set {var} to "hello"
@@ -135,3 +135,19 @@ loop {var} in (1, 2, 3):
 assert {var} is not "hello"
 assert {var} is 3 // the last element from the loop
 ```
+
+This can be used in conjunction with the function set behaviour to pass loop values to a function automatically.
+
+```clike
+function my_func(var):
+    trigger:
+        print {var}
+
+loop my_func(null) in ("hello", "there")
+// the `null` argument is replaced by the loop value when the loop runs
+```
+
+{% hint style="info" %}
+This example uses the **inline** form of the loop section.
+{% endhint %}
+

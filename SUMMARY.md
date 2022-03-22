@@ -15,6 +15,7 @@
   * [Verifier](language-syntax/entries/verifier.md)
   * [Java Method Relay](language-syntax/entries/java-method-relay.md)
 * [Sections](language-syntax/sections/README.md)
+  * [Monitor](language-syntax/sections/monitor.md)
   * [Try / Catch](language-syntax/sections/try-catch.md)
   * [Lambda](language-syntax/sections/lambda.md)
   * [Loop](language-syntax/sections/loop.md)
@@ -36,6 +37,7 @@
 ## namespaces
 
 * [Skript](namespaces/skript.md)
+* [Unsafe](namespaces/unsafe.md)
 
 ## Tutorials
 
