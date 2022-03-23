@@ -125,3 +125,57 @@ function test:
         // it's also that Java type
         print get() from {getter} // runs the get() function
 ```
+
+### Overriding Java Methods
+
+{% hint style="warning" %}
+This section is designed for **very advanced** users.
+{% endhint %}
+
+When using a Java library you may be required to override a specific method. This will require matching the correct parameter and return types.
+
+These will go inside the custom type that extends or uses the Java class as a template. Some examples are given below.
+
+#### Void Return Types
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+public void myMethod(String string);
+```
+{% endtab %}
+
+{% tab title="Skript" %}
+```clike
+function myMethod (string):
+    parameters: String
+    return: none
+    trigger:
+        print {string}
+```
+{% endtab %}
+{% endtabs %}
+
+#### Multiple Parameters
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+public String myMethod(String a, Object b);
+```
+{% endtab %}
+
+{% tab title="Skript" %}
+```clike
+function myMethod (string, object):
+    parameters: string // the second parameter is already an Object
+    return: string
+    trigger:
+        return {string} + " " + {object}
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="danger" %}
+There is no way to specify primitive parameters.
+{% endhint %}
