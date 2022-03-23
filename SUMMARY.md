@@ -13,7 +13,6 @@
 * [Entries](language-syntax/entries/README.md)
   * [Trigger](language-syntax/entries/trigger.md)
   * [Verifier](language-syntax/entries/verifier.md)
-  * [Java Method Relay](language-syntax/entries/java-method-relay.md)
 * [Sections](language-syntax/sections/README.md)
   * [Monitor](language-syntax/sections/monitor.md)
   * [Try / Catch](language-syntax/sections/try-catch.md)

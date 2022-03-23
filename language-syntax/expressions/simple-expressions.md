@@ -277,7 +277,7 @@ print {name}
 
 `(new[ ]line|nl)`
 
-Returns the line break for the current system (`\n` or `\r\n` etc.)
+Returns the line break for the current system ( or `\r` etc.)
 
 Returns a string.
 

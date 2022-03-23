@@ -189,3 +189,59 @@ External functions can also be obtained dynamically.
 set {func} to function "my_target(thing) from skript/my_other_script"
 run {func} with "hello"
 ```
+
+### Return Types
+
+A function may specify an explicit return type of what it will give back to the trigger that ran it.
+
+```clike
+function test:
+    return: string
+    trigger:
+        return "hello"
+```
+
+This is unnecessary for most programs, but can help to prevent unexpected errors. Specifying a return type will allow **only** that type to be returned from the function. Returning the wrong value will error.
+
+{% hint style="info" %}
+This is designed for programs that wish to override Java methods.
+{% endhint %}
+
+#### Return None
+
+Functions may specify `none` as a return type if they have no result value. If this is specified, the `return %Object%` effect may **not** be used.
+
+If a trigger tries to get a return value from this function, it will get an empty `null` value.
+
+{% hint style="success" %}
+The `none` return type counts as a Java `void`.
+{% endhint %}
+
+### Parameter Types
+
+Functions may specify one or more explicit types for their parameters.
+
+```clike
+function test (a, b):
+    parameters: string, integer
+    trigger:
+        assert {a} is a string
+        assert {b} is a number
+        loop {b} times:
+            print {a}
+```
+
+If a function has explicit type parameters, the arguments are **guaranteed** to be of this type. The Skript runtime will attempt to convert incorrect values (e.g. `"3" -> 3`) but if there is no available converter an error will be given instead.
+
+```clike
+function test (name, age):
+    parameters: string, integer
+    trigger:
+        print {name} + " is " + {age} + " years old."
+
+run test("Henry", 92)
+run test("Paula", "31") // "31" -> 31
+run test(3.5, 4) // 3.5 -> "3.5"
+```
+
+Libraries may register additional type converters.
