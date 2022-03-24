@@ -15,7 +15,7 @@ There are three main ways in which you can contribute to the project:
    If you want to make significant contributions to the documentation you may join our organisation.\
    You can also write test code (in Skript) to help catch bugs before releases.
 2. **Contributing to the compiler/runtime source code.**\
-   \*\*\*\*You can create pull-requests on the [GitHub](https://github.com/Moderocky/ByteSkript) with contributions to our source code.\
+   You can create pull-requests on the [GitHub](https://github.com/Moderocky/ByteSkript) with contributions to our source code.\
    You could add or improve syntax, internal features or add extra tests written in Skript to help catch bugs before releases.\
    Make sure to check the [to-do list](https://github.com/Moderocky/ByteSkript/blob/master/TODO.md) for most-wanted features.
 3. **Creating DSL versions and language libraries.**\
