@@ -15,6 +15,7 @@ It is designed to create standalone applications, or to be deployed as a DSL for
 * Want a [tour](tutorials/getting-started/language-tour.md) of the basic language features?
 * Looking to [convert](tutorials/getting-started/converting-to-byteskript.md) from original Skript?
 * Creating a [language library](tutorials/creating-a-library/) (addon)?
+* Looking for the [website](https://byteskript.org)?
 
 ### Visit the GitHub [here](https://github.com/Moderocky/ByteSkript/).
 
@@ -156,8 +157,7 @@ The v2 API is used internally by all of the I/O handler syntax. A lot of these a
   Used for compiling dynamic method handles at runtime.
 * [Foundation](https://github.com/Moderocky/Foundation)\
   A class-building framework to simplify method creation.\
-  Used for compiling simple syntax.\
-
+  Used for compiling simple syntax.\\
 
 ## Credit
 
