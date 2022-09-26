@@ -25,6 +25,9 @@ These functions provide basic utilities, mostly related to the JDK `System` clas
 | `nano_time()`                   | Returns the system nanosecond time as a `Long`. Useful for comparing time passed.                                                     |
 | `hashcode(object)`              | Returns the provided `Integer` hash code of an object.                                                                                |
 | `strict_equals(object, object)` | Performs a strict `ACMP` equals check on the objects, returning `true` if they reference the same object in memory or `false` if not. |
+| `weak_reference(object)`        | Creates a 'weak' reference to an object.                                                                                              |
+| `soft_reference(object)`        | Creates a 'soft' reference to an object.                                                                                              |
+| `reference_value(reference)`    | Retrieves the value of a reference.                                                                                                   |
 
 ### Maths
 
